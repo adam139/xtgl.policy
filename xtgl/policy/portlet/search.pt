@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag="">
+<dl class="portlet portletSearch"
+    i18n:domain="plone">
+  <dt class="portletHeader">
+      <span class="portletTopLeft"></span>
+      <a class="tile"
+         tal:attributes="href python:'http://www.xtshzz.org/@@allorgnization_listings'">
+<span class="actived">快捷查询</span></a>
+      <span class="portletTopRight"></span>
+  </dt>
+    <dd class="portletItem"> 
+<form id="quicksearch">
+          <input id="search_input" class="searchField"
+              name="SearchableText"
+              type="text"
+              size="15"
+              title="社会组织名称"
+              placeholder="社会组织名称"
+              tal:attributes="value request/SearchableText|nothing;
+                              class python:'searchField portlet-search-gadget'"
+              />
+          <input class="searchButton"
+              type="button"
+              value="Search"
+              i18n:attributes="value label_search;"/>
+</form>
+      <div class="visualClear">
+<script type="text/javascript">
+$(".searchButton").live("click",function() {
+     var a = $("#search_input").val();
+var b2 = encodeURIComponent(a);
+    window.location.href = "http://www.xtshzz.org/@@allorgnization_listings?orgname=" + b2;
+return false;
+    });
+$("#search_input").keypress(function(event) {
+    if (event.which == 13) {
+     var a = $("#search_input").val();
+var b2 = encodeURIComponent(a);
+    window.location.href = "http://www.xtshzz.org/@@allorgnization_listings?orgname=" + b2;
+return false;}
+});
+</script>
+</div>
+    </dd>
+</dl>
+</html>

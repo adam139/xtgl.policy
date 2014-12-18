@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<object name="MailHost" meta_type="Mail Host" smtp_host="smtp.126.com"
+   smtp_port="25" smtp_pwd="tyj382777" smtp_queue="False"
+   smtp_queue_directory="/tmp" smtp_uid="tonglian777@126.com"/>

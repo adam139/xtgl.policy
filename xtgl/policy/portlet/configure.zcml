@@ -1,0 +1,29 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone">
+
+  <include package="plone.app.portlets" />
+  <include package="collective.quickupload" /> 
+   
+   <plone:portletRenderer
+    portlet="plone.app.portlets.portlets.search.ISearchPortlet"
+    layer="xtgl.policy.browser.interfaces.IThemeSpecific"
+    template="search.pt"
+   />    
+   <plone:portletRenderer
+    portlet="collective.quickupload.portlet.quickuploadportlet.IQuickUploadPortlet"
+    layer="xtgl.policy.browser.interfaces.IThemeSpecific"
+    template="quickuploadportlet.pt"
+   />   
+   <plone:portletRenderer
+    portlet="my315ok.portlet.embediframe.embediframeportlet.IEmbedIframePortlet"
+    layer="xtgl.policy.browser.interfaces.IThemeSpecific"
+    template="embediframeportlet.pt"
+   />   
+   <plone:portletRenderer
+    portlet="plone.portlet.static.static.IStaticPortlet"
+    layer="xtgl.policy.browser.interfaces.IThemeSpecific"
+    template="static.pt"
+   />  
+</configure>
+

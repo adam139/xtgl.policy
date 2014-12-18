@@ -1,0 +1,5 @@
+<tal:resourceregistries>
+
+  <tal:styles replace="nothing" />
+
+</tal:resourceregistries>

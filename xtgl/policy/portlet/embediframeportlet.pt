@@ -1,0 +1,12 @@
+<dl class="portlet portletEmbedIframePortlet"
+    i18n:domain="my315ok.portlet.embediframe" tal:condition="view/available">
+   <dt class="portletHeader" tal:define="collection_url python:view.fullviewurl()">  
+        <a tal:attributes="href python:collection_url" >
+            <span class="actived" tal:content="view/data/header" i18n:translate="" />
+        <span class="portletTopRight">更多>></span>
+        </a>
+    </dt>    
+    <dd class="portletItem odd" tal:content="structure view/results">
+        Body text
+    </dd>
+</dl>
