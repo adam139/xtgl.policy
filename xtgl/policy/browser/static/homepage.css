@@ -1,0 +1,79 @@
+.row{margin-bottom:6px;overflow:hidden;margin-bottom:0;}
+.row-2 .portlet{height:214px;}
+.row-3 .portlet{height:128px;}
+.row-4 .portlet{height:166px;}
+.kuputab-container,.portlet{margin:0;border:1px solid #B4B4B4;border-top:none}
+
+.nav-tabs .col-xs-4{padding-left:0;padding-right:0}.nav-tabs li:first-child{padding-left:21px}
+.nav-tabs li:last-child{padding-right:21px}.navbar-default .navbar-toggle .icon-bar{background-color:#fff}
+
+.title a{text-decoration:none}.navbar{margin-bottom:10px}.navbar-right{margin-right:6px}
+.navbar-nav>li>a{font-weight:700}.navbar-brand img{margin-top:-2px}
+.no-padding{background-color:#CEE1F0}img.right{float:right}
+.portletItemDetails{float:right;margin-right:1em;color:#000}.nav-tabs>li.active>a:hover{cursor:pointer}
+.btn-active{border-bottom:medium none;border-left:medium none;border-right:medium none;border-radius:4px 4px 0 0;font-size:14px;font-weight:700;margin-left:6px;margin-top:6px;padding-top:3px;padding-bottom:0;color:#337AB7}
+.portletTopRight{color:#fff;float:right;font-size:14px;font-weight:400;line-height:1.42857;margin-right:6px;margin-top:3px}
+.kuputab-container{height:228px;overflow:hidden}
+.row-2,.row-2 .kuputab-container {height:212px}
+.row-2 .col-md-8,.row-2 .col-md-8 a {height:100%}
+.row-2 .img-responsive {height:100%;width:100%}
+
+.kuputab-selectors{position:relative;display:block;margin:0 0 -1em 0;padding:0;list-style-type:none;text-align:center}
+.kuputab-selectors li a{height:24px;line-height:1;margin-top:5px;padding-top:5px;color:#fff;font-size:14px;font-weight:700;background-color:transparent;border:none}
+.rolltext{margin-top:1em}
+ul.rolltext{margin-left:.5em}ul.rolltext li{height:24px}
+.portletItem,.rolltext li,.serviceinfo li{line-height:1.6em;margin-left:-24px;list-style:none outside url(http://images.315ok.org/xtshzz/images/red_point.jpg);border-bottom:1px dashed #b4b4b4}
+.tab-content{margin-top:14px}.tabcontent-lists .portletItem{margin-left:-16px}
+.portletStaticText .portletHeader,.kuputab-selectors,.portletHeader{background:url(http://images.315ok.org/xtshzz/images/portletheaderbg2.jpg) repeat-x scroll 0 0 transparent;height:29px;margin:0}
+.label{color:#787878}.copyright{padding-top:12px}.copyright a{color:#FFC40D}
+.map_brand {float:right;margin-right:38px;margin-top:22px}
+.verticaltext{float:left;font-size:21px;font-weight:700;color:#fff;letter-spacing:24px;line-height:1.2;padding-left:18px;padding-top:9px;width:1em}
+.map_brand a:hover,.map_brand a:focus {text-decoration:none;}
+.portlet-static-footer{margin-top:12px}
+.nav-tabs{border-bottom:none}.navbar-inner{line-height:20px;font-size:14px;font-weight:700}
+
+.section-front-page .breadcrumb{display:none}
+#homepage .portletHeader {
+background: url("http://images.315ok.org/xtshzz/images/portletheaderbg2.jpg") repeat-x scroll 0 0 transparent;
+height: 29px;
+margin: 0;
+padding:0;
+}
+.row .shortcutlink {padding:0;}
+.carousel-inner {height:227px;}
+.template-index-html #portal-breadcrumbs {display:none}
+
+.roll_imageportlet {background-color:#337AB7;}
+#roll_chanpin {
+margin:0;
+
+}
+
+.roll_image {
+display:inline;
+float:left;
+height:152px;
+overflow:hidden;
+width:675px;
+margin-left:6px;
+margin-top:6px;
+background-color: #fff;
+}
+.roll_image li {
+float:left;
+list-style:none outside none;
+text-align:center;
+width:184px;
+margin-left:8px;
+margin-top:9px;
+*height:100%;
+}
+.roll_image li a img {
+    height: 100px;
+    width: 180px;
+}
+.roll_image li a{display:block;margin-top:0;*margin-top:0;}
+.roll_image li a img {width:180px;height:100px;}
+.roll_image ul.img {*height:128px;}
+#roll_chanpin .imgtitle {width:184px;overflow:hidden;font-size:12px;line-height:2.1;margin-top:6px;}
+

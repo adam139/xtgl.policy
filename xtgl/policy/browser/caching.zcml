@@ -1,0 +1,12 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cache="http://namespaces.zope.org/cache"
+    i18n_domain="my315ok.socialorgnization">
+    
+    <include package="z3c.caching" file="meta.zcml" />
+
+    <cache:ruleset
+        for=".homepage.FrontpageView"
+        ruleset="plone.content.itemView"
+        />    
+</configure>

@@ -1,14 +1,64 @@
-<configure xmlns="http://namespaces.zope.org/zope"
-           xmlns:browser="http://namespaces.zope.org/browser"              
-           xmlns:five="http://namespaces.zope.org/five">           
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:z3c="http://namespaces.zope.org/z3c"  
+    i18n_domain="xtgl.policy">   
 
-<!--         
-    <browser:viewlet  
-        name="plone.resourceregistries" 
-        manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
-        template="resourceregistries.pt"
-        layer=".interfaces.IThemeSpecific"         
-        permission="zope2.View" 
+  
+  <include file="caching.zcml" />
+ 	<browser:resourceDirectory
+  		name="xtgl.policy"
+  		directory="static" />
+  		 
+  <browser:page
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      name="index.html"
+      class=".homepage.FrontpageView"
+      permission="zope.Public"
+      layer=".interfaces.IThemeSpecific"       
+      template="templates/homepage.pt"
+/>      
+  <browser:page
+      for="*"
+      name="footer"
+      permission="zope.Public"
+      layer=".interfaces.IThemeSpecific"       
+      template="templates/footer.pt"
+      />      
+    <!-- The search box -->
+    <browser:viewlet
+        name="plone.searchbox"
+        layer=".interfaces.IThemeSpecific"        
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".common.SearchBoxViewlet"
+        permission="zope2.View"
+        />    
+        
+    <!-- override The breadcrumbs -->
+    <browser:viewlet
+        name="plone.path_bar"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+        class=".common.PathBarViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />        
+    <!-- Override global sections viewlet -->
+
+    <browser:viewlet
+        name="plone.global_sections"
+        manager="plone.app.layout.viewlets.interfaces.IMainNavigation"
+        class=".dropdown.DropdownMenuViewlet"
+        layer=".interfaces.IThemeSpecific" 
+        permission="zope2.View"
         />
--->
-</configure>	        
+    
+  <browser:page
+        name="bootstrapbatchnavigation"
+        for="*"
+        permission="zope.Public"
+        class="plone.batching.browser.PloneBatchView"
+    		 layer=".interfaces.IThemeSpecific"        
+        template="templates/batchnavigation_bootstrap.pt"
+        /> 
+
+</configure>

@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<registry>
+  <records interface="Products.CMFPlone.interfaces.ISecuritySchema"
+prefix="plone" /> 	
+  <record name="plone.app.theming.interfaces.IThemeSettings.rules" interface="plone.app.theming.interfaces.IThemeSettings" field="rules">
+    <field type="plone.registry.field.TextLine">
+      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone" ns0:translate="rules_file_path">File path to the rules file</description>
+      <required>False</required>
+      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone" ns0:translate="rules_file">Rules file</title>
+    </field>
+    <value>/++theme++xtgl.theme/rules.xml</value>
+  </record>	
+<!-- Resources -->
+  <records prefix="plone.resources/roll"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+      <value key="js">++resource++xtshzz.policy/roll.js</value>
+      <value key="deps">jquery</value>
+ </records> 
+  <records prefix="plone.resources/bootstrap-tabs"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+      <value key="js">++plone++static/components/bootstrap/js/tab.js</value>
+
+      <value key="deps">jquery</value>
+ </records>
+  <records prefix="plone.resources/ajax-fetchimg"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+      <value key="js">++resource++xtgl.policy/ajaximg.js</value>
+
+      <value key="deps">jquery</value>
+ </records> 
+  <records prefix="plone.resources/bootstrap-carousel"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+      <value key="js">++plone++static/components/bootstrap/js/carousel.js</value>
+      <value key="css">
+        <element>++plone++static/components/bootstrap/less/carousel.less</element>
+      </value>
+      <value key="deps">jquery</value>
+ </records> 
+<records prefix="plone.resources/xtgl-homepage"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++resource++xtgl.policy/homepage-custom.js</value>          
+    <value key="css">
+      <element>++resource++xtgl.policy/homepage.css</element>
+    </value>
+    <value key="deps">jquery</value>
+</records>  
+  <!-- Bundles -->
+  <records prefix="plone.bundles/emc-legacy"
+            interface='Products.CMFPlone.interfaces.IBundleRegistry'>    
+    <value key="depends">plone</value>
+    <value key="jscompilation">++resource++xtgl.policy/legacy-custom.js</value>   
+    <value key="last_compilation">2015-08-14 00:00:00</value>
+    <value key="compile">False</value>
+    <value key="enabled">True</value>
+  </records>
+
+
+<!-- navigation setting -->
+  <record name="plone.sitemap_depth" interface="Products.CMFPlone.interfaces.controlpanel.INavigationSchema" field="sitemap_depth">
+    <field type="plone.registry.field.Int">
+      <default>3</default>
+      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone" ns0:translate="">Number of folder levels to show in the site map.</description>
+      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone" ns0:translate="">Sitemap depth</title>
+    </field>
+    <value>2</value>
+  </record>
+  <record name="plone.displayed_types" interface="Products.CMFPlone.interfaces.controlpanel.INavigationSchema" field="displayed_types">
+    <field type="plone.registry.field.Tuple">
+      <default>
+        <element>Image</element>
+        <element>File</element>
+        <element>Link</element>
+        <element>News Item</element>
+        <element>Folder</element>
+        <element>Document</element>
+        <element>Event</element>
+      </default>
+      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone" ns0:translate="">The content types that should be shown in the navigation and site map.</description>
+      <required>False</required>
+      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone" ns0:translate="">Displayed content types</title>
+      <value_type type="plone.registry.field.Choice">
+        <vocabulary>plone.app.vocabularies.ReallyUserFriendlyTypes</vocabulary>
+      </value_type>
+    </field>
+    <value>
+      <element>News Item</element>
+      <element>Folder</element>
+      <element>Document</element>
+      <element>Event</element>                                          
+    </value>
+  </record>
+
+<records interface="Products.CMFPlone.interfaces.ISecuritySchema" prefix="plone">
+    <value key="enable_self_reg">False</value>    
+</records>
+ <!-- custom TinyMCE templates -->	
+<!-- activate the plugin -->
+<record name="plone.custom_plugins" interface="Products.CMFPlone.interfaces.controlpanel.ITinyMCESchema" field="custom_plugins">
+    <field type="plone.registry.field.List">
+        <default/>
+        <description xmlns:ns0="http://xml.zope.org/namespaces/i18n"
+              ns0:domain="plone"
+              ns0:translate="">Enter a list of custom plugins which will be loaded in the editor. Format is pluginname|location, one per line.</description>
+        <required>False</required>
+        <title xmlns:ns0="http://xml.zope.org/namespaces/i18n"
+              ns0:domain="plone"
+              ns0:translate="">Custom plugins</title>
+        <value_type type="plone.registry.field.TextLine" />
+    </field>
+    <value>
+        <element>template|+plone+static/components/tinymce-builded/js/tinymce/plugins/template</element>
+    </value>
+</record>
+
+<!-- register our template -->
+
+<record name="plone.templates" interface="Products.CMFPlone.interfaces.controlpanel.ITinyMCESchema" field="templates">
+  <field type="plone.registry.field.Text">
+    <default></default>
+    <description xmlns:ns0="http://xml.zope.org/namespaces/i18n"
+        ns0:domain="plone"
+        ns0:translate="help_tinymce_templates">Enter the list of templates in json format
+        http://www.tinymce.com/wiki.php/Plugin:template</description>
+    <required>False</required>
+    <title xmlns:ns0="http://xml.zope.org/namespaces/i18n"
+        ns0:domain="plone"
+        ns0:translate="label_tinymce_templates">Templates</title>
+  </field>
+  <value>[{"title": "EMC实验", "url": "++theme++collective.diazotheme.bootstrap/tinymce_templates/emc_experiment.html"},
+  	{"title": "EMC分析", "url": "++theme++collective.diazotheme.bootstrap/tinymce_templates/emc_analysis.html"}]</value>
+</record>
+</registry>

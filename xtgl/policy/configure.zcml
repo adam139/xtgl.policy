@@ -5,7 +5,7 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="xtgl.policy">
 
-  <five:registerPackage package="." initialize=".initialize" />
+
 
   <genericsetup:registerProfile
       name="default"
@@ -16,5 +16,5 @@
       />
   <!-- -*- extra stuff goes here -*- -->
      <include package=".browser" />    
-    <include package=".portlet" />  
+  
 </configure>
