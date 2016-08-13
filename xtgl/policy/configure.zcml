@@ -5,8 +5,6 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="xtgl.policy">
 
-
-
   <genericsetup:registerProfile
       name="default"
       title="xtgl.policy"
@@ -14,7 +12,14 @@
       description="Installs the xtgl.policy package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  <!-- -*- extra stuff goes here -*- -->
+  <genericsetup:registerProfile
+      name="post"
+      title="xtgl.policy post steps"
+      directory="profiles/post"
+      description="some clear and post steps after initial the site"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />        
+
      <include package=".browser" />    
   
 </configure>

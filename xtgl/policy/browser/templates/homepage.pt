@@ -492,7 +492,9 @@
 			<div class="col-md-8 col-xs-12">
 				<!-- roll images-->
     			<div class="portlet roll_imageportlet">
-    				<div class="map_brand"><a href="#" class="verticaltext" alt="图片新闻">图片新闻</a></div>   
+    				<div class="map_brand">
+    					<a href="#" 
+    						tal:attributes="href python:p + '/gongludongtai/tupianxinwen/'" class="verticaltext" alt="图片新闻">图片新闻</a></div>   
         		<div id="roll_chanpin" tal:attributes="data-root python:p">
         		<div class="roll_image" data-pause="1000" data-step="1" data-speed="37" data-direction="left">
             	<ul class="img"></ul>          
@@ -505,7 +507,7 @@
   				<ul  class="nav nav-tabs kuputab-selectors" role="tablist">
     				<li role="presentation" class="active">
     					<a href="#fuwuxinxi" aria-controls="fuwuxinxi" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/gonglujianshe/@@view'">服务信息</a>
+    						tal:attributes="data-js-target python:p + '/@@index.html'">服务信息</a>
     				</li>
   				</ul>
   					<!-- Tab panes start-->
