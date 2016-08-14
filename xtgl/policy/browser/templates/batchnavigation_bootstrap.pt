@@ -8,7 +8,7 @@
   tal:define="batch view/batch|nothing;"
   tal:condition="batch">
 
-  <ul class="pagination"
+  <ul class="pager"
     tal:condition="batch/multiple_pages">
 
     <!-- First -->
