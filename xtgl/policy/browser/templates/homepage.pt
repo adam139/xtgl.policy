@@ -24,15 +24,15 @@
   				<ul  class="nav nav-tabs kuputab-selectors row" role="tablist">
     				<li role="presentation" class="active col-xs-4">
     					<a href="#gongzuodongtai" aria-controls="gongzuodongtai" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/tongzhigonggao/@@view'">工作动态</a>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/gongzuodongtai/@@view'">工作动态</a>
     				</li>
     				<li role="presentation" class="col-xs-4">
     					<a href="#jicengdongtai" aria-controls="jicengdongtai" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/shehuizuzhifengcai/@@view'">基层动态</a>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/jicengdongtai/@@view'">基层动态</a>
     				</li>
     				<li role="presentation" class="col-xs-4">
     					<a href="#zonghexinxi" aria-controls="zonghexinxi" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/guanligongzuodongtai/@@view'">综合信息</a></li>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/zonghexinxi/@@view'">综合信息</a></li>
   				</ul>
   					<!-- Tab panes start-->
   				<div class="tab-content">
@@ -268,7 +268,7 @@
   			</div> <!--Tab panes end -->
 			</div>
 			</div> <!-- tabPortlet end-->
-       <div class="col-xs-12 col-md-8">
+       <div class="hidden-xs col-sm-12 col-md-8">
 
 				<a href="#"
 					tal:attributes="href python:p +'gongludongtai/qunzhongluxianjiaoyo/@@view'">
@@ -489,7 +489,7 @@
 		</div>
 				
 		<div class="row row-4">
-			<div class="col-md-8 col-xs-12">
+			<div class="col-md-8 col-sm-12 hidden-xs">
 				<!-- roll images-->
     			<div class="portlet roll_imageportlet">
     				<div class="map_brand">
