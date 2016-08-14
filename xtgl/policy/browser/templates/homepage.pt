@@ -24,15 +24,15 @@
   				<ul  class="nav nav-tabs kuputab-selectors row" role="tablist">
     				<li role="presentation" class="active col-xs-4">
     					<a href="#gongzuodongtai" aria-controls="gongzuodongtai" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/gongzuodongtai/@@view'">工作动态</a>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/gongzuodongtai'">工作动态</a>
     				</li>
     				<li role="presentation" class="col-xs-4">
     					<a href="#jicengdongtai" aria-controls="jicengdongtai" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/jicengdongtai/@@view'">基层动态</a>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/jicengdongtai'">基层动态</a>
     				</li>
     				<li role="presentation" class="col-xs-4">
     					<a href="#zonghexinxi" aria-controls="zonghexinxi" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/zonghexinxi/@@view'">综合信息</a></li>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/zonghexinxi'">综合信息</a></li>
   				</ul>
   					<!-- Tab panes start-->
   				<div class="tab-content">
@@ -114,11 +114,11 @@
   				<ul  class="nav nav-tabs kuputab-selectors row" role="tablist">
     				<li role="presentation" class="active col-xs-6">
     					<a href="#tongzhigonggao" aria-controls="tongzhigonggao" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/tongzhigonggao/@@view'">通知公告</a>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/tongzhigonggao'">通知公告</a>
     				</li>
     				<li role="presentation" class="col-xs-6">
     					<a data-target="#gonglujianbao" href="#gonglujianbao" aria-controls="gonglujianbao" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/gonglujianbao/@@view'">公路简报</a>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/gonglujianbao'">公路简报</a>
     				</li>
   				</ul>
   					<!-- Tab panes -->
@@ -184,15 +184,15 @@
   				<ul  class="nav nav-tabs kuputab-selectors row" role="tablist">
     				<li role="presentation" class="active col-xs-4">
     					<a href="#zhengwugongkai" aria-controls="zhengwugongkai" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + ' /pub/sqls/zhengwugongkai/@@view'">政务公开</a>
+    						tal:attributes="data-js-target python:p + ' /pub/sqls/zhengwugongkai'">政务公开</a>
     				</li>
     				<li role="presentation" class="col-xs-4">
     					<a href="#qunzhongluxianshijian" aria-controls="qunzhongluxianshijian" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/qunzhongluxianshijian/@@view'">群众路线</a>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/qunzhongluxianshijian'">群众路线</a>
     				</li>
     				<li role="presentation" class="col-xs-4">
     					<a href="#chaoxianchaozai" aria-controls="chaoxianchaozai" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/chaoxianchaozai/@@view'">超限超载</a></li>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/chaoxianchaozai'">超限超载</a></li>
   				</ul>
   					<!-- Tab panes start-->
   				<div class="tab-content">
@@ -289,15 +289,15 @@
   				<ul  class="nav nav-tabs kuputab-selectors row" role="tablist">
     				<li role="presentation" class="active col-xs-4">
     					<a href="#dangtuanjianshe" aria-controls="dangtuanjianshe" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/dangtuanjianshe/@@view'">党团建设</a>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/dangtuanjianshe'">党团建设</a>
     				</li>
     				<li role="presentation" class="col-xs-4">
     					<a href="#gongluwenhua" aria-controls="gongluwenhua" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/gongluwenhua/@@view'">公路文化</a>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/gongluwenhua'">公路文化</a>
     				</li>
     				<li role="presentation" class="col-xs-4">
     					<a href="#falvzhengce" aria-controls="falvzhengce" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/falvzhengce/@@view'">法律政策</a></li>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/falvzhengce'">法律政策</a></li>
   				</ul>
   					<!-- Tab panes start-->
   				<div class="tab-content">
@@ -380,15 +380,15 @@
   				<ul  class="nav nav-tabs kuputab-selectors row" role="tablist">
     				<li role="presentation" class="active col-xs-4">
     					<a href="#gonglujianshe" aria-controls="gonglujianshe" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/gonglujianshe/@@view'">公路建设</a>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/gonglujianshe'">公路建设</a>
     				</li>
     				<li role="presentation" class="col-xs-4">
     					<a href="#gongluyanghu" aria-controls="gongluyanghu" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/gongluyanghu/@@view'">公路养护</a>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/gongluyanghu'">公路养护</a>
     				</li>
     				<li role="presentation" class="col-xs-4">
     					<a href="#gongluzhifa" aria-controls="gongluzhifa" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/gongluzhifa/@@view'">公路执法</a></li>
+    						tal:attributes="data-js-target python:p + '/pub/sqls/gongluzhifa'">公路执法</a></li>
   				</ul>
   					<!-- Tab panes start-->
   				<div class="tab-content">
@@ -469,7 +469,7 @@
   				<ul  class="nav nav-tabs kuputab-selectors" role="tablist">
     				<li role="presentation" class="active">
     					<a href="#gongluyanghujiantu" aria-controls="gongluyanghujiantu" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/gonglujianshe/@@view'">公路养护简图</a>
+    						tal:attributes="data-js-target python:p">公路养护简图</a>
     				</li>
   				</ul>
   					<!-- Tab panes start-->

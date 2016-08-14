@@ -9,6 +9,8 @@
  	<browser:resourceDirectory
   		name="xtgl.policy"
   		directory="static" />
+  		
+
   		 
   <browser:page
       for="Products.CMFCore.interfaces.ISiteRoot"
@@ -53,7 +55,7 @@
         />
     
   <browser:page
-        name="bootstrapbatchnavigation"
+        name="batchnavigation"
         for="*"
         permission="zope.Public"
         class="plone.batching.browser.PloneBatchView"
