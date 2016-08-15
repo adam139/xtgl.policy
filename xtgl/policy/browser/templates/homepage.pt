@@ -271,7 +271,7 @@
        <div class="hidden-xs col-sm-12 col-md-8">
 
 				<a href="#"
-					tal:attributes="href python:p +'gongludongtai/qunzhongluxianjiaoyo/@@view'">
+					tal:attributes="href python:p +'/gongludongtai/qunzhongluxianjiaoyo/@@tableview'">
 					<img alt="三严三实"   class="img-responsive"
 						src="http://images.315ok.org/xtgl/images/sanyansanshinew.jpg" />
 						</a>
