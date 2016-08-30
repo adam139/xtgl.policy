@@ -9,3 +9,5 @@ class IThemeSpecific(Interface):
     import step.
     """
    
+class ISpecificTopic(Interface):
+    """Mark interface for special topic folder"""   

@@ -4,7 +4,7 @@
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       metal:use-macro="here/main_template/macros/master"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"      
-      i18n:domain="xtshzz.policy">        
+      i18n:domain="xtgl.policy">        
 
 <body>	
 <metal:main fill-slot="main">
@@ -271,9 +271,9 @@
        <div class="hidden-xs col-sm-12 col-md-8">
 
 				<a href="#"
-					tal:attributes="href python:p +'/gongludongtai/qunzhongluxianjiaoyo/@@tableview'">
-					<img alt="三严三实"   class="img-responsive"
-						src="http://images.315ok.org/xtgl/images/sanyansanshinew.jpg" />
+					tal:attributes="href python:p +'/gongludongtai/anquanjianguanzhuanlan/@@special_topic'">
+					<img alt="道路运输安全监管宣传专栏"   class="img-responsive"
+						src="http://images.315ok.org/xtgl/images/anquanjianguan747x212.png" />
 						</a>
      	        
        </div>

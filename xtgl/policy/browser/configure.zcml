@@ -19,6 +19,15 @@
       permission="zope.Public"
       layer=".interfaces.IThemeSpecific"       
       template="templates/homepage.pt"
+/>  
+<!-- security topic homepage -->
+  <browser:page
+      for=".interfaces.ISpecificTopic"
+      name="special_topic"
+      class=".homepage.TopicView"
+      permission="zope.Public"
+      layer=".interfaces.IThemeSpecific"       
+      template="templates/special_topic.pt"
 />      
   <browser:page
       for="*"

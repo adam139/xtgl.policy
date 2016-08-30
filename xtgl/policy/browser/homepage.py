@@ -180,5 +180,6 @@ class FrontpageView(baseview):
                 }
         return data
         
-
+class TopicView(FrontpageView):
+    """special topic homepage view"""
             
