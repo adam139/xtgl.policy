@@ -6,13 +6,13 @@
     <include package="z3c.caching" file="meta.zcml" />
   
   <cache:rulesetType
-      name="plone.homepage"
+      name="plone.frontpage"
       title="Homepage"
       description="Site homepage view"
       />
 
     <cache:ruleset
         for=".homepage.FrontpageView"
-        ruleset="plone.homepage"
+        ruleset="plone.frontpage"
         />    
 </configure>
