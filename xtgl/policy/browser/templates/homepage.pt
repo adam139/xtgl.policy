@@ -12,7 +12,16 @@
     <div id="homepage" 
     			tal:define="p python:context.absolute_url();
     			            plone_view context/@@plone;
-    			            toLocalizedTime nocall:plone_view/toLocalizedTime">      	
+    			            toLocalizedTime nocall:plone_view/toLocalizedTime">
+       <div class="row row-0">
+           <div class="visible-lg-block visible-md-block col-md-12">
+				<a href="#"
+					tal:attributes="href python:p">
+					<img alt="湘潭市公路管理局官方网站"   class="img-responsive"
+						src="http://images.315ok.org/xtgl/images/header_bg2.jpg/>
+						</a>     	        
+           </div>       	
+       </div>    			                  	
        <div class="row row-1">
          <div class="col-xs-12 col-md-4">
          	<div tal:replace="structure python: view.carouselresult()">outer</div>        	
@@ -173,8 +182,7 @@
     		</div>
   			</div>
 			</div>				
-     	</div>     
-
+     	</div>
                            
        <div class="row row-2">        
          <div class="col-xs-12 col-md-4 tabPortlet">
