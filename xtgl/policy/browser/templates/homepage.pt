@@ -190,7 +190,7 @@
   				<!-- Nav tabs -->
   				
   				<ul  class="nav nav-tabs kuputab-selectors row" role="tablist">
-    				<li role="presentation" class="active col-xs-8">
+    				<li role="presentation" class="active col-xs-4">
     					<a href="#zhengwugongkai" aria-controls="zhengwugongkai" role="tab" data-toggle="tab"
     						tal:attributes="data-js-target python:p + '/pub/sqls/zhengwugongkai'">政务公开</a>
     				</li>
@@ -200,7 +200,7 @@
     						tal:attributes="data-js-target python:p + '/pub/sqls/qunzhongluxianshijian'">群众路线</a>
     				</li>
     				-->
-    				<li role="presentation" class="col-xs-8">
+    				<li role="presentation" class="col-xs-4">
     					<a href="#chaoxianchaozai" aria-controls="chaoxianchaozai" role="tab" data-toggle="tab"
     						tal:attributes="data-js-target python:p + '/pub/sqls/chaoxianchaozai'">超限超载</a></li>
   				</ul>
