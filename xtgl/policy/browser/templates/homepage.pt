@@ -126,8 +126,8 @@
     						tal:attributes="data-js-target python:p + '/pub/sqls/tongzhigonggao'">通知公告</a>
     				</li>
     				<li role="presentation" class="col-xs-6">
-    					<a data-target="#gonglujianbao" href="#gonglujianbao" aria-controls="gonglujianbao" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/gonglujianbao'">公路简报</a>
+    					<a data-target="#tiaochazhengji" href="#tiaochazhengji" aria-controls="tiaochazhengji" role="tab" data-toggle="tab"
+    						tal:attributes="data-js-target python:p + '/pub/sqls/tiaochazhengji'">调查征集</a>
     				</li>
   				</ul>
   					<!-- Tab panes -->
@@ -157,7 +157,7 @@
     			</div>
     			<div role="tabpanel" class="tab-pane" id="gonglujianbao">
          	<ul class="tabcontent-lists">    	
-         	<tal:group tal:repeat="obj python:view.collection('gonglujianbao',7)">
+         	<tal:group tal:repeat="obj python:view.collection('tiaochazhengji',7)">
     				<li class="portletItem"
         		tal:define="oddrow repeat/obj/odd;ttl obj/Title"
         		tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
@@ -190,16 +190,16 @@
   				<!-- Nav tabs -->
   				
   				<ul  class="nav nav-tabs kuputab-selectors row" role="tablist">
-    				<li role="presentation" class="active col-xs-4">
+    				<li role="presentation" class="active col-xs-6">
     					<a href="#zhengwugongkai" aria-controls="zhengwugongkai" role="tab" data-toggle="tab"
     						tal:attributes="data-js-target python:p + '/pub/sqls/zhengwugongkai'">政务公开</a>
     				</li>
-    				
+    			<!--
     				<li role="presentation" class="col-xs-4">
     					<a href="#tiaochazhengji" aria-controls="tiaochazhengji" role="tab" data-toggle="tab"
     						tal:attributes="data-js-target python:p + '/pub/sqls/tiaochazhengji'">调查征集</a>
-    				</li>    				
-    				<li role="presentation" class="col-xs-4">
+    				</li> -->	   				
+    				<li role="presentation" class="col-xs-6">
     					<a href="#chaoxianchaozai" aria-controls="chaoxianchaozai" role="tab" data-toggle="tab"
     						tal:attributes="data-js-target python:p + '/pub/sqls/chaoxianchaozai'">超限超载</a></li>
   				</ul>
@@ -228,6 +228,7 @@
     					</tal:group>
     					</ul>    	
     				</div>
+    		<!--
     		<div role="tabpanel" class="tab-pane" id="tiaochazhengji">
          	<ul class="tabcontent-lists">    	
          	<tal:group tal:repeat="obj python:view.collection('tiaochazhengji',7)">
@@ -250,7 +251,7 @@
     				</li> 
     				</tal:group>
     				</ul>    				    	
-    		</div>
+    		</div> -->
     		<div role="tabpanel" class="tab-pane" id="chaoxianchaozai">
          	<ul class="tabcontent-lists">    	
          	<tal:group tal:repeat="obj python:view.collection('chaoxianchaozai',7)">
