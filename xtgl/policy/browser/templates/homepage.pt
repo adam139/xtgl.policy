@@ -155,7 +155,7 @@
     				</tal:group>
     				</ul>    				    	
     			</div>
-    			<div role="tabpanel" class="tab-pane" id="gonglujianbao">
+    			<div role="tabpanel" class="tab-pane" id="tiaochazhengji">
          	<ul class="tabcontent-lists">    	
          	<tal:group tal:repeat="obj python:view.collection('tiaochazhengji',7)">
     				<li class="portletItem"
