@@ -190,17 +190,16 @@
   				<!-- Nav tabs -->
   				
   				<ul  class="nav nav-tabs kuputab-selectors row" role="tablist">
-    				<li role="presentation" class="active col-xs-6">
+    				<li role="presentation" class="active col-xs-4">
     					<a href="#zhengwugongkai" aria-controls="zhengwugongkai" role="tab" data-toggle="tab"
     						tal:attributes="data-js-target python:p + '/pub/sqls/zhengwugongkai'">政务公开</a>
     				</li>
-    				<!--
+    				
     				<li role="presentation" class="col-xs-4">
-    					<a href="#qunzhongluxianshijian" aria-controls="qunzhongluxianshijian" role="tab" data-toggle="tab"
-    						tal:attributes="data-js-target python:p + '/pub/sqls/qunzhongluxianshijian'">群众路线</a>
-    				</li>
-    				-->
-    				<li role="presentation" class="col-xs-6">
+    					<a href="#tiaochazhengji" aria-controls="tiaochazhengji" role="tab" data-toggle="tab"
+    						tal:attributes="data-js-target python:p + '/pub/sqls/tiaochazhengji'">调查征集</a>
+    				</li>    				
+    				<li role="presentation" class="col-xs-4">
     					<a href="#chaoxianchaozai" aria-controls="chaoxianchaozai" role="tab" data-toggle="tab"
     						tal:attributes="data-js-target python:p + '/pub/sqls/chaoxianchaozai'">超限超载</a></li>
   				</ul>
@@ -229,10 +228,9 @@
     					</tal:group>
     					</ul>    	
     				</div>
-    		<!-- 
-    		<div role="tabpanel" class="tab-pane" id="qunzhongluxianshijian">
+    		<div role="tabpanel" class="tab-pane" id="tiaochazhengji">
          	<ul class="tabcontent-lists">    	
-         	<tal:group tal:repeat="obj python:view.collection('qunzhongluxianshijian',7)">
+         	<tal:group tal:repeat="obj python:view.collection('tiaochazhengji',7)">
     				<li class="portletItem"
         		tal:define="oddrow repeat/obj/odd;ttl obj/Title"
         		tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
@@ -252,7 +250,7 @@
     				</li> 
     				</tal:group>
     				</ul>    				    	
-    		</div> -->
+    		</div>
     		<div role="tabpanel" class="tab-pane" id="chaoxianchaozai">
          	<ul class="tabcontent-lists">    	
          	<tal:group tal:repeat="obj python:view.collection('chaoxianchaozai',7)">
