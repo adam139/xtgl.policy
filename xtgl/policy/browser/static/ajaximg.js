@@ -20,13 +20,13 @@ function ajaxfetchimg(C, B, Z, T) {
       if(window.ActiveXObject) {
         E = new ActiveXObject("Microsoft.XMLDOM");
         E.async = false;
-        E.loadXML(G)
+        E.loadXML(G);
       } else {
         var H = new DOMParser();
-        E = H.parseFromString(G, "text/xml")
+        E = H.parseFromString(G, "text/xml");
       }
       if(E.childNodes.length == 0) {
-        return
+        return;
       }
       $(E).find(".banner").each(function() {
         var I, H, T, S, F;
@@ -34,18 +34,18 @@ function ajaxfetchimg(C, B, Z, T) {
         T = $(this).find("img").attr("alt");
         S = $(this).find("img").attr("src");
         if(T) {
-          F = "<div class=\"imgtitle\">" + T + "</div>"
+          F = "<div class=\"imgtitle\">" + T + "</div>";
         } else {
-          f = ""
+          f = "";
         }
         I = "<li><a href='" + H + "' title='" + T + "' target='_blank'><img src='" + S + "' /></a>" + F + "</li>";
-        $(C + " .img").append(I)
+        $(C + " .img").append(I);
       });
       $(Z).each(function() {
-        $(this).marquee()
-      })
+        $(this).marquee();
+      });
     }
-  })
+  });
 }
 var $ = jQuery.noConflict();
 (function($) {
@@ -59,7 +59,7 @@ var $ = jQuery.noConflict();
     var dIndex = jQuery.inArray(o.direction, ['right', 'down']);
     if(dIndex > -1) {
       o.direction = ['left', 'up'][dIndex];
-      o.step = -o.step
+      o.step = -o.step;
     }
     var mid;
     var div = $(this);
@@ -76,21 +76,21 @@ var $ = jQuery.noConflict();
       if(o.direction == 'left') {
         ul.width(2 * liSize * liWidth + 1 * liWidth);
         if(o.step < 0) {
-          div.scrollLeft(width)
+          div.scrollLeft(width);
         }
       } else {
         ul.height(2 * liSize * liHeight);
         if(o.step < 0) {
-          div.scrollTop(height)
+          div.scrollTop(height);
         }
       }
       ul.append(li.clone());
       mid = setInterval(_marquee, o.speed);
       div.hover(function() {
-        clearInterval(mid)
+        clearInterval(mid);
       }, function() {
-        mid = setInterval(_marquee, o.speed)
-      })
+        mid = setInterval(_marquee, o.speed);
+      });
     }
     function _marquee() {
       if(o.direction == 'left') {
