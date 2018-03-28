@@ -21,5 +21,11 @@
       />        
 
      <include package=".browser" />    
-  
+  <genericsetup:upgradeStep
+      title="export documents to file system"
+      description="export documents to file system."
+      source="1000"
+      destination="1001"
+      handler="xtgl.policy.migration.export_product"
+      profile="xtgl.policy:default"/>  
 </configure>
