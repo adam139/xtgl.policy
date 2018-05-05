@@ -4,15 +4,11 @@
     i18n_domain="my315ok.socialorgnization">
     
     <include package="z3c.caching" file="meta.zcml" />
-  
-  <cache:rulesetType
-      name="plone.frontpage"
-      title="Homepage"
-      description="Site homepage view"
-      />
+
+
 
     <cache:ruleset
         for=".homepage.FrontpageView"
-        ruleset="plone.frontpage"
+        ruleset="plone.content.folderView"
         />    
 </configure>
